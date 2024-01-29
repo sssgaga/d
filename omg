@@ -79,10 +79,10 @@ class byfron:
 
     def Suicide():
         roblox_processes = byfron.YieldForProgram(
-            "RobloxPlayerBeta.exe" or "Windows10Universal.exe"
+            "Windows10Universal.exe"
         )
         if roblox_processes:
-            os.system("taskkill /im RobloxPlayerBeta.exe" or "taskkill /im Windows10Universal.exe")
+            os.system("taskkill /im Windows10Universal.exe")
 
         if not roblox_processes:
             exit()
@@ -413,11 +413,8 @@ tf = "\033[94m[?]\033[0m"
 suc = "\033[92m[+]\033[0m"
 noo = "\033[91m[-]\033[0m"
 
-Web = "RobloxPlayerBeta.exe"
 Mic = "Windows10Universal.exe"
 while True:
-    if byfron.YieldForProgram(Web, True, 15):
-        break
     if byfron.YieldForProgram(Mic, True, 15):
         break
 
