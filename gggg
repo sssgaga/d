@@ -669,5 +669,3 @@ def LaunchExploit():
 
 if LaunchExploit():
     exit()
-else:
-    byfron.Suicide()
